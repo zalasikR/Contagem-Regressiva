@@ -8,6 +8,8 @@ Este projeto é um contador regressivo interativo, desenvolvido com HTML, CSS e 
 - **Interface Animada**: Elementos numéricos animados para uma melhor experiência visual.
 - **Atualização em Tempo Real**: O contador atualiza dinamicamente na tela a cada segundo.
 - **Mensagem de Fim**: Exibe uma mensagem clara quando o tempo é concluído.
+- ![image](https://github.com/user-attachments/assets/ef9a9c47-7340-4daa-a36f-6338484da63c)
+
 
 ## 🚀 Tecnologias Utilizadas
 
