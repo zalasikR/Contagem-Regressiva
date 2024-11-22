@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #01080e;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    color: #d8f9ff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6); /* Fundo mais opaco para maior contraste */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra sutil */
+}
+
+h1 {
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #30155c;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 1em;
+    text-transform: uppercase;
+    position: relative;
+    color: #ffffff;
+    background: linear-gradient(145deg, #09242e, #083740);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px #00161b, inset -2px -2px 5px #10404e;
+}
+
+li span {
+    display: block;
+    font-size: 3.5rem;
+    color: #2BDEFD;
+}
+
+.cobra {
+    position: absolute;
+    width: 100px; /* Espessura ajustável */
+    height: 10px; /* Altura ajustável */
+    background-color: #2BDEFD; /* Cor */
+    border-radius: 5px; /* Forma arredondada */
+    animation: andarCobrinha 5s infinite linear;
+}
+
+@keyframes andarCobrinha {
+    0% {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        transform: translateX(-50%);
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+    }
+}
+#contagem {
+  display: none; /* Mantém escondido até ser exibido via script */
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+#contagem ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 0;
+  margin: 0;
+}
+
+#contagem li {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: #10101b; /* Fundo escuro */
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #30155c; /* Texto claro */
+  box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #000000; /* Efeito de profundidade */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#contagem li:hover {
+  background-color: #000000; /* Cor de destaque ao passar o mouse */
+  color: #10101b; /* Texto escuro para contraste */
+  transform: scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+#contagem li span {
+  display: block;
+  font-size: 2.5rem; /* Tamanho maior para os números */
+  font-weight: bold;
+  color: #a46bff; /* Destaque para os números */
+}
