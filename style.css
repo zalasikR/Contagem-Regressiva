@@ -76,18 +76,6 @@ li span {
   margin: 0;
 }
 
-#contagem li {
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  background: #10101b; /* Fundo escuro */
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: #30155c; /* Texto claro */
-  box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #000000; /* Efeito de profundidade */
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
 #contagem li:hover {
   background-color: #000000; /* Cor de destaque ao passar o mouse */
   color: #10101b; /* Texto escuro para contraste */
