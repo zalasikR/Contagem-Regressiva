@@ -58,42 +58,6 @@ li span {
     color: #2BDEFD;
 }
 
-.cobra {
-    position: absolute;
-    width: 100px; /* Espessura ajustável */
-    height: 10px; /* Altura ajustável */
-    background-color: #2BDEFD; /* Cor */
-    border-radius: 5px; /* Forma arredondada */
-    animation: andarCobrinha 5s infinite linear;
-}
-
-@keyframes andarCobrinha {
-    0% {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    25% {
-        top: 0;
-        left: 100%;
-        transform: translateX(-50%);
-    }
-    50% {
-        top: 100%;
-        left: 100%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-    75% {
-        top: 100%;
-        left: 0;
-        transform: translateX(-50%) translateY(-50%);
-    }
-    100% {
-        top: 0;
-        left: 0;
-        transform: translateX(-50%);
-    }
-}
 #contagem {
   display: none; /* Mantém escondido até ser exibido via script */
   margin-top: 20px;
